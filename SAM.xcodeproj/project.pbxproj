@@ -14,6 +14,8 @@
 		7F371A581B521E1800C4869F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F371A561B521E1800C4869F /* LaunchScreen.xib */; };
 		7F371A641B521E1900C4869F /* SAMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F371A631B521E1900C4869F /* SAMTests.swift */; };
 		89FBA6650FF415CC329A12E0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381BE8E4347D1E21BCAAC828 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C8FFD1E11B545DCC008D5EF1 /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1E01B545DCC008D5EF1 /* CollectionsViewController.swift */; };
+		C8FFD1E31B545F24008D5EF1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1E21B545F24008D5EF1 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		7F371A5D1B521E1900C4869F /* SAMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F371A621B521E1900C4869F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F371A631B521E1900C4869F /* SAMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMTests.swift; sourceTree = "<group>"; };
+		C8FFD1E01B545DCC008D5EF1 /* CollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
+		C8FFD1E21B545F24008D5EF1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 		7F371A4A1B521E1800C4869F /* SAM */ = {
 			isa = PBXGroup;
 			children = (
+				C8FFD1D61B544CD6008D5EF1 /* Menu */,
+				C8FFD1D71B544CE2008D5EF1 /* Sections */,
 				7F371A4D1B521E1800C4869F /* AppDelegate.swift */,
 				7F371A4F1B521E1800C4869F /* ViewController.swift */,
 				7F371A511B521E1800C4869F /* Main.storyboard */,
@@ -117,6 +123,22 @@
 				7F371A621B521E1900C4869F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8FFD1D61B544CD6008D5EF1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C8FFD1E21B545F24008D5EF1 /* MenuViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		C8FFD1D71B544CE2008D5EF1 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				C8FFD1E01B545DCC008D5EF1 /* CollectionsViewController.swift */,
+			);
+			name = Sections;
 			sourceTree = "<group>";
 		};
 		DD79520B4C1CFF42E4B0E019 /* Frameworks */ = {
@@ -288,6 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F371A501B521E1800C4869F /* ViewController.swift in Sources */,
+				C8FFD1E31B545F24008D5EF1 /* MenuViewController.swift in Sources */,
+				C8FFD1E11B545DCC008D5EF1 /* CollectionsViewController.swift in Sources */,
 				7F371A4E1B521E1800C4869F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
