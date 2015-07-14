@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7F371A4E1B521E1800C4869F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F371A4D1B521E1800C4869F /* AppDelegate.swift */; };
-		7F371A501B521E1800C4869F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F371A4F1B521E1800C4869F /* ViewController.swift */; };
 		7F371A531B521E1800C4869F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F371A511B521E1800C4869F /* Main.storyboard */; };
 		7F371A551B521E1800C4869F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F371A541B521E1800C4869F /* Images.xcassets */; };
 		7F371A581B521E1800C4869F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F371A561B521E1800C4869F /* LaunchScreen.xib */; };
 		7F371A641B521E1900C4869F /* SAMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F371A631B521E1900C4869F /* SAMTests.swift */; };
 		89FBA6650FF415CC329A12E0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381BE8E4347D1E21BCAAC828 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		C8FFD1E11B545DCC008D5EF1 /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1E01B545DCC008D5EF1 /* CollectionsViewController.swift */; };
-		C8FFD1E31B545F24008D5EF1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1E21B545F24008D5EF1 /* MenuViewController.swift */; };
+		C8FFD1EA1B547AE8008D5EF1 /* SAMCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1E91B547AE8008D5EF1 /* SAMCollectionsViewController.swift */; };
+		C8FFD1EC1B547B23008D5EF1 /* SAMMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1EB1B547B23008D5EF1 /* SAMMenuViewController.swift */; };
+		C8FFD1EF1B547B79008D5EF1 /* SAMReusableMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1ED1B547B79008D5EF1 /* SAMReusableMenuCell.swift */; };
+		C8FFD1F01B547B79008D5EF1 /* SAMReusableMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8FFD1EE1B547B79008D5EF1 /* SAMReusableMenuCell.xib */; };
+		C8FFD1F31B547C73008D5EF1 /* BoringSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8FFD1F21B547C73008D5EF1 /* BoringSansBold.ttf */; };
+		C8FFD1F51B547F3A008D5EF1 /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8FFD1F41B547F3A008D5EF1 /* Menu.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +38,18 @@
 		7F371A481B521E1800C4869F /* SAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F371A4C1B521E1800C4869F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F371A4D1B521E1800C4869F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F371A4F1B521E1800C4869F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F371A521B521E1800C4869F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F371A541B521E1800C4869F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7F371A571B521E1800C4869F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7F371A5D1B521E1900C4869F /* SAMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F371A621B521E1900C4869F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F371A631B521E1900C4869F /* SAMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMTests.swift; sourceTree = "<group>"; };
-		C8FFD1E01B545DCC008D5EF1 /* CollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
-		C8FFD1E21B545F24008D5EF1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C8FFD1E91B547AE8008D5EF1 /* SAMCollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMCollectionsViewController.swift; sourceTree = "<group>"; };
+		C8FFD1EB1B547B23008D5EF1 /* SAMMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMMenuViewController.swift; sourceTree = "<group>"; };
+		C8FFD1ED1B547B79008D5EF1 /* SAMReusableMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMReusableMenuCell.swift; sourceTree = "<group>"; };
+		C8FFD1EE1B547B79008D5EF1 /* SAMReusableMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMReusableMenuCell.xib; sourceTree = "<group>"; };
+		C8FFD1F21B547C73008D5EF1 /* BoringSansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BoringSansBold.ttf; sourceTree = "<group>"; };
+		C8FFD1F41B547F3A008D5EF1 /* Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,14 +94,15 @@
 		7F371A4A1B521E1800C4869F /* SAM */ = {
 			isa = PBXGroup;
 			children = (
-				C8FFD1D61B544CD6008D5EF1 /* Menu */,
-				C8FFD1D71B544CE2008D5EF1 /* Sections */,
+				C8FFD1E41B547818008D5EF1 /* SAMReusableCells */,
+				C8FFD1D61B544CD6008D5EF1 /* SAMMenu */,
+				C8FFD1D71B544CE2008D5EF1 /* SAMSections */,
 				7F371A4D1B521E1800C4869F /* AppDelegate.swift */,
-				7F371A4F1B521E1800C4869F /* ViewController.swift */,
 				7F371A511B521E1800C4869F /* Main.storyboard */,
 				7F371A541B521E1800C4869F /* Images.xcassets */,
 				7F371A561B521E1800C4869F /* LaunchScreen.xib */,
 				7F371A4B1B521E1800C4869F /* Supporting Files */,
+				C8FFD1F11B547BF0008D5EF1 /* Resources */,
 			);
 			path = SAM;
 			sourceTree = "<group>";
@@ -125,20 +132,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C8FFD1D61B544CD6008D5EF1 /* Menu */ = {
+		C8FFD1D61B544CD6008D5EF1 /* SAMMenu */ = {
 			isa = PBXGroup;
 			children = (
-				C8FFD1E21B545F24008D5EF1 /* MenuViewController.swift */,
+				C8FFD1EB1B547B23008D5EF1 /* SAMMenuViewController.swift */,
 			);
-			name = Menu;
+			name = SAMMenu;
 			sourceTree = "<group>";
 		};
-		C8FFD1D71B544CE2008D5EF1 /* Sections */ = {
+		C8FFD1D71B544CE2008D5EF1 /* SAMSections */ = {
 			isa = PBXGroup;
 			children = (
-				C8FFD1E01B545DCC008D5EF1 /* CollectionsViewController.swift */,
+				C8FFD1E91B547AE8008D5EF1 /* SAMCollectionsViewController.swift */,
 			);
-			name = Sections;
+			name = SAMSections;
+			sourceTree = "<group>";
+		};
+		C8FFD1E41B547818008D5EF1 /* SAMReusableCells */ = {
+			isa = PBXGroup;
+			children = (
+				C8FFD1ED1B547B79008D5EF1 /* SAMReusableMenuCell.swift */,
+				C8FFD1EE1B547B79008D5EF1 /* SAMReusableMenuCell.xib */,
+			);
+			name = SAMReusableCells;
+			sourceTree = "<group>";
+		};
+		C8FFD1F11B547BF0008D5EF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8FFD1F21B547C73008D5EF1 /* BoringSansBold.ttf */,
+				C8FFD1F41B547F3A008D5EF1 /* Menu.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		DD79520B4C1CFF42E4B0E019 /* Frameworks */ = {
@@ -242,8 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F371A531B521E1800C4869F /* Main.storyboard in Resources */,
+				C8FFD1F31B547C73008D5EF1 /* BoringSansBold.ttf in Resources */,
+				C8FFD1F01B547B79008D5EF1 /* SAMReusableMenuCell.xib in Resources */,
 				7F371A581B521E1800C4869F /* LaunchScreen.xib in Resources */,
 				7F371A551B521E1800C4869F /* Images.xcassets in Resources */,
+				C8FFD1F51B547F3A008D5EF1 /* Menu.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,9 +337,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F371A501B521E1800C4869F /* ViewController.swift in Sources */,
-				C8FFD1E31B545F24008D5EF1 /* MenuViewController.swift in Sources */,
-				C8FFD1E11B545DCC008D5EF1 /* CollectionsViewController.swift in Sources */,
+				C8FFD1EF1B547B79008D5EF1 /* SAMReusableMenuCell.swift in Sources */,
+				C8FFD1EC1B547B23008D5EF1 /* SAMMenuViewController.swift in Sources */,
+				C8FFD1EA1B547AE8008D5EF1 /* SAMCollectionsViewController.swift in Sources */,
 				7F371A4E1B521E1800C4869F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

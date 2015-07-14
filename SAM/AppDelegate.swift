@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let menuController = MenuViewController()
-        let mainController = CollectionsViewController()
+        let menuController = SAMMenuViewController()
+        let mainController = SAMCollectionsViewController()
         let navControlMain = UINavigationController(rootViewController: mainController)
         let navControlMenu = UINavigationController(rootViewController: menuController)
         
