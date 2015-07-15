@@ -4,11 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="BoringSansBold.ttf">
-            <string>BoringSansBold</string>
-        </mutableArray>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -25,11 +20,11 @@
                             <constraint firstAttribute="width" constant="297" id="NUF-Na-M0m"/>
                             <constraint firstAttribute="height" constant="38" id="b9x-AC-1Ca"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="BoringSansBold" family="BoringSansBold" pointSize="25"/>
+                        <fontDescription key="fontDescription" name="GillSans-UltraBold" family="Gill Sans" pointSize="27"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.86274509803921573" green="0.85098039215686272" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="UpJ-0I-YEg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="6zV-A6-2zv"/>
                     <constraint firstItem="UpJ-0I-YEg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="irF-OR-P4p"/>
