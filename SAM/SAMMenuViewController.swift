@@ -33,7 +33,6 @@ class SAMMenuViewController: UITableViewController {
         
         self.navigationItem.titleView = titleView
         
-        
         //self.navigationController?.navigationItem.titleView = titleView
 
     }
@@ -56,15 +55,13 @@ class SAMMenuViewController: UITableViewController {
         
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "menuCell")
         
-        cell.textLabel?.text = arrayMenu[indexPath.row] as? String
+        cell.textLabel?.text = arrayMenu[indexPath.row]["title"] as? String
         
         
         cell.backgroundColor = UIColor(red: 220/255, green: 217/255, blue: 213/255, alpha: 1.0)
         cell.textLabel?.textColor = UIColor.blackColor()
         
         cell.textLabel?.font = UIFont(name: "GillSans-Bold", size: 25.0)
-        
-        
         
         let selectedView = UIView()
         selectedView.backgroundColor = UIColor.blackColor()
@@ -76,6 +73,17 @@ class SAMMenuViewController: UITableViewController {
         
         
     }
+    
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        //Present UITableView or ViewController here depending on "performSubview" key here...
+        var controllerString = arrayMenu[indexPath.row]["performSubview"] as? String
+        
+        self.presentSAMController(controllerString!)
+        
+    }
+    
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 63.0

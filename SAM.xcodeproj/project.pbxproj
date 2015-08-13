@@ -13,6 +13,9 @@
 		7F371A581B521E1800C4869F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F371A561B521E1800C4869F /* LaunchScreen.xib */; };
 		7F371A641B521E1900C4869F /* SAMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F371A631B521E1900C4869F /* SAMTests.swift */; };
 		89FBA6650FF415CC329A12E0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381BE8E4347D1E21BCAAC828 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C8A93B611B7C0B55009D997F /* SAMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A93B601B7C0B55009D997F /* SAMTableViewController.swift */; };
+		C8A93B631B7C0B72009D997F /* SAMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A93B621B7C0B72009D997F /* SAMViewController.swift */; };
+		C8A93B681B7C1229009D997F /* UIViewController+SAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A93B671B7C1229009D997F /* UIViewController+SAM.swift */; };
 		C8FFD1EA1B547AE8008D5EF1 /* SAMCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1E91B547AE8008D5EF1 /* SAMCollectionsViewController.swift */; };
 		C8FFD1EC1B547B23008D5EF1 /* SAMMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1EB1B547B23008D5EF1 /* SAMMenuViewController.swift */; };
 		C8FFD1EF1B547B79008D5EF1 /* SAMReusableMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1ED1B547B79008D5EF1 /* SAMReusableMenuCell.swift */; };
@@ -44,6 +47,9 @@
 		7F371A5D1B521E1900C4869F /* SAMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F371A621B521E1900C4869F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F371A631B521E1900C4869F /* SAMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAMTests.swift; sourceTree = "<group>"; };
+		C8A93B601B7C0B55009D997F /* SAMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMTableViewController.swift; sourceTree = "<group>"; };
+		C8A93B621B7C0B72009D997F /* SAMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMViewController.swift; sourceTree = "<group>"; };
+		C8A93B671B7C1229009D997F /* UIViewController+SAM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SAM.swift"; sourceTree = "<group>"; };
 		C8FFD1E91B547AE8008D5EF1 /* SAMCollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMCollectionsViewController.swift; sourceTree = "<group>"; };
 		C8FFD1EB1B547B23008D5EF1 /* SAMMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMMenuViewController.swift; sourceTree = "<group>"; };
 		C8FFD1ED1B547B79008D5EF1 /* SAMReusableMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMReusableMenuCell.swift; sourceTree = "<group>"; };
@@ -94,10 +100,11 @@
 		7F371A4A1B521E1800C4869F /* SAM */ = {
 			isa = PBXGroup;
 			children = (
+				7F371A4D1B521E1800C4869F /* AppDelegate.swift */,
+				C8A93B5F1B7C0AFE009D997F /* SAMUIKit */,
 				C8FFD1E41B547818008D5EF1 /* SAMReusableCells */,
 				C8FFD1D61B544CD6008D5EF1 /* SAMMenu */,
 				C8FFD1D71B544CE2008D5EF1 /* SAMSections */,
-				7F371A4D1B521E1800C4869F /* AppDelegate.swift */,
 				7F371A511B521E1800C4869F /* Main.storyboard */,
 				7F371A541B521E1800C4869F /* Images.xcassets */,
 				7F371A561B521E1800C4869F /* LaunchScreen.xib */,
@@ -132,6 +139,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C8A93B5F1B7C0AFE009D997F /* SAMUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C8A93B601B7C0B55009D997F /* SAMTableViewController.swift */,
+				C8A93B621B7C0B72009D997F /* SAMViewController.swift */,
+				C8A93B671B7C1229009D997F /* UIViewController+SAM.swift */,
+			);
+			name = SAMUIKit;
+			sourceTree = "<group>";
+		};
+		C8A93B641B7C0CF2009D997F /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				C8FFD1F41B547F3A008D5EF1 /* Menu.plist */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
 		C8FFD1D61B544CD6008D5EF1 /* SAMMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,8 +185,8 @@
 		C8FFD1F11B547BF0008D5EF1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C8A93B641B7C0CF2009D997F /* Configurations */,
 				C8FFD1F21B547C73008D5EF1 /* BoringSansBold.ttf */,
-				C8FFD1F41B547F3A008D5EF1 /* Menu.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -339,7 +364,10 @@
 			files = (
 				C8FFD1EF1B547B79008D5EF1 /* SAMReusableMenuCell.swift in Sources */,
 				C8FFD1EC1B547B23008D5EF1 /* SAMMenuViewController.swift in Sources */,
+				C8A93B681B7C1229009D997F /* UIViewController+SAM.swift in Sources */,
+				C8A93B611B7C0B55009D997F /* SAMTableViewController.swift in Sources */,
 				C8FFD1EA1B547AE8008D5EF1 /* SAMCollectionsViewController.swift in Sources */,
+				C8A93B631B7C0B72009D997F /* SAMViewController.swift in Sources */,
 				7F371A4E1B521E1800C4869F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

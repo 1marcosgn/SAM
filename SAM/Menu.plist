@@ -4,12 +4,54 @@
 <dict>
 	<key>MenuElements</key>
 	<array>
-		<string>VISIT</string>
-		<string>EXHIBITIONS</string>
-		<string>COLLECTIONS</string>
-		<string>CONTACT US</string>
-		<string>PROGRAMS</string>
-		<string>JOIN &amp; SAVE</string>
+		<dict>
+			<key>title</key>
+			<string>Visit</string>
+			<key>id</key>
+			<string>sam-section.visit</string>
+			<key>performSubview</key>
+			<string>tableView</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Exhibitions</string>
+			<key>id</key>
+			<string>sam-section.exhibition</string>
+			<key>performSubview</key>
+			<string>tableView</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Collections</string>
+			<key>id</key>
+			<string>sam-section.collections</string>
+			<key>performSubview</key>
+			<string>tableView</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Contact us</string>
+			<key>id</key>
+			<string>sam-section.contactus</string>
+			<key>performSubview</key>
+			<string>subView</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Programs</string>
+			<key>id</key>
+			<string>sam-section.programs</string>
+			<key>performSubview</key>
+			<string>UIView</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Join &amp; Save</string>
+			<key>id</key>
+			<string>sam-section.join_save</string>
+			<key>performSubview</key>
+			<string>UIView</string>
+		</dict>
 	</array>
 </dict>
 </plist>
