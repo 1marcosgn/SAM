@@ -8,15 +8,43 @@
 
 import UIKit
 
-extension UIViewController{
+let kStringViewController = "SAMReusableViewController"
+let kStringTableViewController = "SAMReusableTableViewController"
+let kStringSubViewController = "SAMReusableSubViewController"
+
+extension UIViewController
+{
+    func presentSAMController (viewControllerType: String)
+    {
+        var vc = UIViewController()
+        var controller = ""
+        if viewControllerType == "UIView"
+        {
+            controller = kStringViewController
+            vc = SAMReusableViewController(nibName: controller, bundle: nil)
+        }
+        else if viewControllerType == "tableView"
+        {
+            controller = kStringTableViewController
+            vc = SAMReusableTableViewController(nibName: controller, bundle: nil)
+        }
+        else if viewControllerType == "subView"
+        {
+            controller = kStringTableViewController
+            vc = SAMReusableViewController(nibName: controller, bundle: nil)
+        }
+        self.showSAMControllerInView(vc)
+    }
     
-    func presentSAMController(viewControllerType: String){
-        
-        //present controller here
-        
-        //table || view || subview
-        
-        println("\(viewControllerType)")
+    func showSAMControllerInView (vc: UIViewController)
+    {
+        var navController = UINavigationController()
+        navController = UINavigationController(rootViewController: vc)
+        self.presentViewController(navController, animated: true, completion: nil)
+    }
+    
+    func popToRoot(sender:UIBarButtonItem){
+        //self.navigationController.popToRootViewControllerAnimated(true)
     }
     
 }

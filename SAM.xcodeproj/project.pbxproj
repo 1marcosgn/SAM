@@ -16,6 +16,10 @@
 		C8A93B611B7C0B55009D997F /* SAMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A93B601B7C0B55009D997F /* SAMTableViewController.swift */; };
 		C8A93B631B7C0B72009D997F /* SAMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A93B621B7C0B72009D997F /* SAMViewController.swift */; };
 		C8A93B681B7C1229009D997F /* UIViewController+SAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A93B671B7C1229009D997F /* UIViewController+SAM.swift */; };
+		C8C1A5691BAA9096008CEE0F /* SAMReusableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C1A5671BAA9096008CEE0F /* SAMReusableTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C8C1A56A1BAA9096008CEE0F /* SAMReusableTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8C1A5681BAA9096008CEE0F /* SAMReusableTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		C8E4FC531BB0A3BD0082C101 /* SAMReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4FC511BB0A3BD0082C101 /* SAMReusableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		C8E4FC541BB0A3BD0082C101 /* SAMReusableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E4FC521BB0A3BD0082C101 /* SAMReusableViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		C8FFD1EA1B547AE8008D5EF1 /* SAMCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1E91B547AE8008D5EF1 /* SAMCollectionsViewController.swift */; };
 		C8FFD1EC1B547B23008D5EF1 /* SAMMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1EB1B547B23008D5EF1 /* SAMMenuViewController.swift */; };
 		C8FFD1EF1B547B79008D5EF1 /* SAMReusableMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1ED1B547B79008D5EF1 /* SAMReusableMenuCell.swift */; };
@@ -50,6 +54,10 @@
 		C8A93B601B7C0B55009D997F /* SAMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMTableViewController.swift; sourceTree = "<group>"; };
 		C8A93B621B7C0B72009D997F /* SAMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMViewController.swift; sourceTree = "<group>"; };
 		C8A93B671B7C1229009D997F /* UIViewController+SAM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SAM.swift"; sourceTree = "<group>"; };
+		C8C1A5671BAA9096008CEE0F /* SAMReusableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMReusableTableViewController.swift; sourceTree = "<group>"; };
+		C8C1A5681BAA9096008CEE0F /* SAMReusableTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMReusableTableViewController.xib; sourceTree = "<group>"; };
+		C8E4FC511BB0A3BD0082C101 /* SAMReusableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMReusableViewController.swift; sourceTree = "<group>"; };
+		C8E4FC521BB0A3BD0082C101 /* SAMReusableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMReusableViewController.xib; sourceTree = "<group>"; };
 		C8FFD1E91B547AE8008D5EF1 /* SAMCollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMCollectionsViewController.swift; sourceTree = "<group>"; };
 		C8FFD1EB1B547B23008D5EF1 /* SAMMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMMenuViewController.swift; sourceTree = "<group>"; };
 		C8FFD1ED1B547B79008D5EF1 /* SAMReusableMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMReusableMenuCell.swift; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 		7F371A4A1B521E1800C4869F /* SAM */ = {
 			isa = PBXGroup;
 			children = (
+				C80E921A1BA8D99A00D2061E /* SAMReusableUIElements */,
 				7F371A4D1B521E1800C4869F /* AppDelegate.swift */,
 				C8A93B5F1B7C0AFE009D997F /* SAMUIKit */,
 				C8FFD1E41B547818008D5EF1 /* SAMReusableCells */,
@@ -137,6 +146,17 @@
 				7F371A621B521E1900C4869F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C80E921A1BA8D99A00D2061E /* SAMReusableUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				C8C1A5671BAA9096008CEE0F /* SAMReusableTableViewController.swift */,
+				C8C1A5681BAA9096008CEE0F /* SAMReusableTableViewController.xib */,
+				C8E4FC511BB0A3BD0082C101 /* SAMReusableViewController.swift */,
+				C8E4FC521BB0A3BD0082C101 /* SAMReusableViewController.xib */,
+			);
+			name = SAMReusableUIElements;
 			sourceTree = "<group>";
 		};
 		C8A93B5F1B7C0AFE009D997F /* SAMUIKit */ = {
@@ -255,7 +275,9 @@
 		7F371A401B521E1800C4869F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Marcos Garcia";
 				TargetAttributes = {
 					7F371A471B521E1800C4869F = {
@@ -292,10 +314,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F371A531B521E1800C4869F /* Main.storyboard in Resources */,
+				C8E4FC541BB0A3BD0082C101 /* SAMReusableViewController.xib in Resources */,
 				C8FFD1F31B547C73008D5EF1 /* BoringSansBold.ttf in Resources */,
 				C8FFD1F01B547B79008D5EF1 /* SAMReusableMenuCell.xib in Resources */,
 				7F371A581B521E1800C4869F /* LaunchScreen.xib in Resources */,
 				7F371A551B521E1800C4869F /* Images.xcassets in Resources */,
+				C8C1A56A1BAA9096008CEE0F /* SAMReusableTableViewController.xib in Resources */,
 				C8FFD1F51B547F3A008D5EF1 /* Menu.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,10 +386,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E4FC531BB0A3BD0082C101 /* SAMReusableViewController.swift in Sources */,
 				C8FFD1EF1B547B79008D5EF1 /* SAMReusableMenuCell.swift in Sources */,
 				C8FFD1EC1B547B23008D5EF1 /* SAMMenuViewController.swift in Sources */,
 				C8A93B681B7C1229009D997F /* UIViewController+SAM.swift in Sources */,
 				C8A93B611B7C0B55009D997F /* SAMTableViewController.swift in Sources */,
+				C8C1A5691BAA9096008CEE0F /* SAMReusableTableViewController.swift in Sources */,
 				C8FFD1EA1B547AE8008D5EF1 /* SAMCollectionsViewController.swift in Sources */,
 				C8A93B631B7C0B72009D997F /* SAMViewController.swift in Sources */,
 				7F371A4E1B521E1800C4869F /* AppDelegate.swift in Sources */,
@@ -431,6 +457,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -499,6 +526,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImageSAM;
 				INFOPLIST_FILE = SAM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcosgn1.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -511,6 +539,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImageSAM;
 				INFOPLIST_FILE = SAM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcosgn1.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -529,6 +558,7 @@
 				);
 				INFOPLIST_FILE = SAMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcosgn1.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAM.app/SAM";
 			};
@@ -544,6 +574,7 @@
 				);
 				INFOPLIST_FILE = SAMTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcosgn1.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAM.app/SAM";
 			};
