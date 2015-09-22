@@ -21,6 +21,9 @@
 		C8E4FC531BB0A3BD0082C101 /* SAMReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4FC511BB0A3BD0082C101 /* SAMReusableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C8E4FC541BB0A3BD0082C101 /* SAMReusableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E4FC521BB0A3BD0082C101 /* SAMReusableViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		C8E4FC561BB209900082C101 /* SAMMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4FC551BB209900082C101 /* SAMMainTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		C8E4FC571BB220880082C101 /* SAMReusableTableViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = C8C1A5681BAA9096008CEE0F /* SAMReusableTableViewController.xib */; };
+		C8E4FC581BB220880082C101 /* SAMReusableViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = C8E4FC521BB0A3BD0082C101 /* SAMReusableViewController.xib */; };
+		C8E4FC591BB220880082C101 /* SAMReusableMenuCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1EE1B547B79008D5EF1 /* SAMReusableMenuCell.xib */; };
 		C8FFD1EA1B547AE8008D5EF1 /* SAMCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1E91B547AE8008D5EF1 /* SAMCollectionsViewController.swift */; };
 		C8FFD1EC1B547B23008D5EF1 /* SAMMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1EB1B547B23008D5EF1 /* SAMMenuViewController.swift */; };
 		C8FFD1EF1B547B79008D5EF1 /* SAMReusableMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1ED1B547B79008D5EF1 /* SAMReusableMenuCell.swift */; };
@@ -389,6 +392,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E4FC571BB220880082C101 /* SAMReusableTableViewController.xib in Sources */,
+				C8E4FC581BB220880082C101 /* SAMReusableViewController.xib in Sources */,
+				C8E4FC591BB220880082C101 /* SAMReusableMenuCell.xib in Sources */,
 				C8E4FC561BB209900082C101 /* SAMMainTableViewCell.swift in Sources */,
 				C8E4FC531BB0A3BD0082C101 /* SAMReusableViewController.swift in Sources */,
 				C8FFD1EF1B547B79008D5EF1 /* SAMReusableMenuCell.swift in Sources */,
