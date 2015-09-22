@@ -13,12 +13,18 @@ class SAMReusableTableViewController: UITableViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        //Add back button
+        let leftButtonItem = UIBarButtonItem(image: UIImage(named: "menuIcon"), style: UIBarButtonItemStyle.Plain, target: self, action: "pop_ToRoot")
+        self.navigationItem.leftBarButtonItem = leftButtonItem
     }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
+    }
+    
+    func pop_ToRoot()
+    {
+        self.slideMenuController()?.openLeft()
     }
 
     // MARK: - Table view data source

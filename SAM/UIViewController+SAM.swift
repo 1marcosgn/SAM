@@ -40,11 +40,6 @@ extension UIViewController
     {
         var navController = UINavigationController()
         navController = UINavigationController(rootViewController: vc)
-        self.presentViewController(navController, animated: true, completion: nil)
+        self.slideMenuController()?.changeMainViewController(navController, close: true)
     }
-    
-    func popToRoot(sender:UIBarButtonItem){
-        //self.navigationController.popToRootViewControllerAnimated(true)
-    }
-    
 }

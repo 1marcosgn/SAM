@@ -20,6 +20,7 @@
 		C8C1A56A1BAA9096008CEE0F /* SAMReusableTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8C1A5681BAA9096008CEE0F /* SAMReusableTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		C8E4FC531BB0A3BD0082C101 /* SAMReusableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4FC511BB0A3BD0082C101 /* SAMReusableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		C8E4FC541BB0A3BD0082C101 /* SAMReusableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E4FC521BB0A3BD0082C101 /* SAMReusableViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		C8E4FC561BB209900082C101 /* SAMMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E4FC551BB209900082C101 /* SAMMainTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		C8FFD1EA1B547AE8008D5EF1 /* SAMCollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1E91B547AE8008D5EF1 /* SAMCollectionsViewController.swift */; };
 		C8FFD1EC1B547B23008D5EF1 /* SAMMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1EB1B547B23008D5EF1 /* SAMMenuViewController.swift */; };
 		C8FFD1EF1B547B79008D5EF1 /* SAMReusableMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFD1ED1B547B79008D5EF1 /* SAMReusableMenuCell.swift */; };
@@ -58,6 +59,7 @@
 		C8C1A5681BAA9096008CEE0F /* SAMReusableTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMReusableTableViewController.xib; sourceTree = "<group>"; };
 		C8E4FC511BB0A3BD0082C101 /* SAMReusableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMReusableViewController.swift; sourceTree = "<group>"; };
 		C8E4FC521BB0A3BD0082C101 /* SAMReusableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAMReusableViewController.xib; sourceTree = "<group>"; };
+		C8E4FC551BB209900082C101 /* SAMMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMMainTableViewCell.swift; sourceTree = "<group>"; };
 		C8FFD1E91B547AE8008D5EF1 /* SAMCollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMCollectionsViewController.swift; sourceTree = "<group>"; };
 		C8FFD1EB1B547B23008D5EF1 /* SAMMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMMenuViewController.swift; sourceTree = "<group>"; };
 		C8FFD1ED1B547B79008D5EF1 /* SAMReusableMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMReusableMenuCell.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				C8C1A5681BAA9096008CEE0F /* SAMReusableTableViewController.xib */,
 				C8E4FC511BB0A3BD0082C101 /* SAMReusableViewController.swift */,
 				C8E4FC521BB0A3BD0082C101 /* SAMReusableViewController.xib */,
+				C8E4FC551BB209900082C101 /* SAMMainTableViewCell.swift */,
 			);
 			name = SAMReusableUIElements;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E4FC561BB209900082C101 /* SAMMainTableViewCell.swift in Sources */,
 				C8E4FC531BB0A3BD0082C101 /* SAMReusableViewController.swift in Sources */,
 				C8FFD1EF1B547B79008D5EF1 /* SAMReusableMenuCell.swift in Sources */,
 				C8FFD1EC1B547B23008D5EF1 /* SAMMenuViewController.swift in Sources */,
