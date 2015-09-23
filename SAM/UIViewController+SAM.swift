@@ -30,7 +30,7 @@ extension UIViewController
         }
         else if viewControllerType == "subView"
         {
-            controller = kStringTableViewController
+            controller = kStringViewController
             vc = SAMReusableViewController(nibName: controller, bundle: nil)
         }
         self.showSAMControllerInView(vc)
